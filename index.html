@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syri AI — Intelligent Solutions for Tomorrow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-mark">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="2" y="2" width="24" height="24" rx="6" stroke="url(#logoGrad)" stroke-width="2"/>
+                        <circle cx="10" cy="14" r="3" fill="url(#logoGrad)"/>
+                        <circle cx="18" cy="10" r="2" fill="url(#logoGrad)" opacity="0.6"/>
+                        <circle cx="18" cy="18" r="2" fill="url(#logoGrad)" opacity="0.6"/>
+                        <line x1="12.5" y1="13" x2="16.5" y2="10.5" stroke="url(#logoGrad)" stroke-width="1.2"/>
+                        <line x1="12.5" y1="15" x2="16.5" y2="17.5" stroke="url(#logoGrad)" stroke-width="1.2"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28">
+                                <stop stop-color="#7c3aed"/>
+                                <stop offset="1" stop-color="#e879f9"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span>Syri AI</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Solutions</a></li>
+                <li><a href="#case-studies">Use Cases</a></li>
+                <li><a href="#expertise">Why Us</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="btn btn-nav">Let's Talk <span class="btn-arrow">→</span></a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="hero">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="hero-grid-bg"></div>
+
+        <div class="container hero-content">
+            <div class="hero-pill">
+                <span class="pill-dot"></span>
+                Based in Miami, FL — Building the Future of AI
+            </div>
+            <h1>
+                <span class="hero-line">Your Vision.</span>
+                <span class="hero-line"><span class="gradient-text shimmer">Our Intelligence.</span></span>
+            </h1>
+            <p class="hero-sub">A physician. An MIT engineer. A growth strategist.<br class="hide-mobile"> Together, we're building AI that doesn't just work — it wins.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-glow">
+                    Start a Project
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="#services" class="btn btn-glass">
+                    Explore Solutions
+                </a>
+            </div>
+        </div>
+
+        <!-- Marquee Ticker -->
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>Medical AI</span><span class="marquee-dot">◆</span>
+                    <span>Clinical Decision Support</span><span class="marquee-dot">◆</span>
+                    <span>Machine Learning</span><span class="marquee-dot">◆</span>
+                    <span>Marketing Intelligence</span><span class="marquee-dot">◆</span>
+                    <span>Predictive Analytics</span><span class="marquee-dot">◆</span>
+                    <span>Workflow Automation</span><span class="marquee-dot">◆</span>
+                    <span>Data Infrastructure</span><span class="marquee-dot">◆</span>
+                    <span>HIPAA Compliant</span><span class="marquee-dot">◆</span>
+                    <span>Natural Language Processing</span><span class="marquee-dot">◆</span>
+                    <span>Computer Vision</span><span class="marquee-dot">◆</span>
+                    <span>Recommendation Engines</span><span class="marquee-dot">◆</span>
+                    <span>Real-Time Analytics</span><span class="marquee-dot">◆</span>
+                    <span>Medical AI</span><span class="marquee-dot">◆</span>
+                    <span>Clinical Decision Support</span><span class="marquee-dot">◆</span>
+                    <span>Machine Learning</span><span class="marquee-dot">◆</span>
+                    <span>Marketing Intelligence</span><span class="marquee-dot">◆</span>
+                    <span>Predictive Analytics</span><span class="marquee-dot">◆</span>
+                    <span>Workflow Automation</span><span class="marquee-dot">◆</span>
+                    <span>Data Infrastructure</span><span class="marquee-dot">◆</span>
+                    <span>HIPAA Compliant</span><span class="marquee-dot">◆</span>
+                    <span>Natural Language Processing</span><span class="marquee-dot">◆</span>
+                    <span>Computer Vision</span><span class="marquee-dot">◆</span>
+                    <span>Recommendation Engines</span><span class="marquee-dot">◆</span>
+                    <span>Real-Time Analytics</span><span class="marquee-dot">◆</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-block glass-card">
+                    <span class="stat-value" data-count="3">0</span>
+                    <span class="stat-label">Co-Founders</span>
+                </div>
+                <div class="stat-block glass-card">
+                    <span class="stat-value" data-count="3">0</span>
+                    <span class="stat-label">Domains of Expertise</span>
+                </div>
+                <div class="stat-block glass-card">
+                    <span class="stat-value">MIT</span>
+                    <span class="stat-label">Engineering Pedigree</span>
+                </div>
+                <div class="stat-block glass-card">
+                    <span class="stat-value">Miami</span>
+                    <span class="stat-label">Headquarters</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-left" data-animate>
+                    <span class="tag">Who We Are</span>
+                    <h2>Three Founders.<br><span class="gradient-text">Three Domains.</span><br>One Vision.</h2>
+                    <p class="about-desc">Most AI companies are built by engineers alone. Syri AI is different. We were founded in Miami by a physician, an MIT-trained engineer, and a marketing strategist — because the best AI isn't just technically sound, it's built by people who deeply understand the problems it solves.</p>
+                    <p class="about-desc">Our founding thesis is simple: AI solutions fail when they're designed in isolation from the industries they serve. By embedding domain expertise into every layer — from data collection and model training to deployment and optimization — we build systems that clinicians actually trust, platforms that engineers can scale, and strategies that marketers can measure.</p>
+                    <p class="about-desc">Headquartered in Miami's rapidly growing tech ecosystem, we serve clients across the Americas and beyond, bringing a unique blend of Latin American market insight and world-class technical capability to every engagement.</p>
+                </div>
+                <div class="about-bento" data-animate>
+                    <div class="bento-card bento-tall glass-card">
+                        <div class="bento-glow"></div>
+                        <span class="bento-icon">⚕</span>
+                        <h4>The Doctor</h4>
+                        <p>A practicing physician who ensures every healthcare AI solution is clinically sound, ethically grounded, and built for real patient outcomes. With years of frontline medical experience, they bridge the gap between what engineers build and what clinicians need — ensuring our AI doesn't just pass validation, it transforms care.</p>
+                    </div>
+                    <div class="bento-card glass-card">
+                        <div class="bento-glow"></div>
+                        <span class="bento-icon">⚙</span>
+                        <h4>The Engineer</h4>
+                        <p>An MIT graduate who architects production-grade ML systems engineered for enterprise scale. From custom transformer models to real-time inference pipelines, they bring the technical rigor that separates prototypes from products.</p>
+                    </div>
+                    <div class="bento-card glass-card">
+                        <div class="bento-glow"></div>
+                        <span class="bento-icon">◎</span>
+                        <h4>The Strategist</h4>
+                        <p>A marketing wizard who turns raw data into growth engines. With deep expertise in customer analytics, conversion optimization, and brand intelligence, they ensure every AI solution delivers measurable business ROI — not just impressive demos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders -->
+    <section class="founders">
+        <div class="container">
+            <div class="founders-banner glass-card" data-animate>
+                <div class="founder-item">
+                    <div class="founder-avatar">⚕</div>
+                    <div class="founder-info">
+                        <span class="founder-title">Medical</span>
+                        <span class="founder-role">Physician & Co-Founder</span>
+                        <p>Clinical expertise ensuring AI that heals, not just computes. Leading our healthcare practice with real-world medical insight.</p>
+                    </div>
+                </div>
+                <div class="founders-divider"></div>
+                <div class="founder-item">
+                    <div class="founder-avatar">⚙</div>
+                    <div class="founder-info">
+                        <span class="founder-title">Technical</span>
+                        <span class="founder-role">MIT Engineer & Co-Founder</span>
+                        <p>Systems architecture built for enterprise scale from day one. Leading our engineering team with cutting-edge ML research.</p>
+                    </div>
+                </div>
+                <div class="founders-divider"></div>
+                <div class="founder-item">
+                    <div class="founder-avatar">◎</div>
+                    <div class="founder-info">
+                        <span class="founder-title">Marketing</span>
+                        <span class="founder-role">Growth Strategist & Co-Founder</span>
+                        <p>Data-driven strategy that turns AI into measurable business impact. Leading our growth practice with proven ROI frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="tag">What We Build</span>
+                <h2>AI Solutions Across<br><span class="gradient-text">Critical Industries</span></h2>
+                <p>We don't do one-size-fits-all. Each solution is purpose-built for its domain, validated by experts, and engineered for production from day one.</p>
+            </div>
+            <div class="services-stack">
+                <div class="service-row glass-card" data-animate>
+                    <div class="service-index">01</div>
+                    <div class="service-info">
+                        <h3>Medical AI</h3>
+                        <p>From diagnostics to patient triage to clinical decision support — we build AI systems that integrate into existing healthcare workflows without disruption. Our physician-led approach means every model is validated against real clinical scenarios, built with HIPAA compliance from the ground up, and designed to augment (never replace) the clinician's judgment. Whether you're a hospital system looking to reduce readmissions, a clinic optimizing patient flow, or a healthtech startup building your core product, we bring the clinical credibility and technical depth to make it happen.</p>
+                    </div>
+                    <div class="service-tags">
+                        <span class="chip">Clinical Decision Support</span>
+                        <span class="chip">Patient Flow Optimization</span>
+                        <span class="chip">Medical Image Analysis</span>
+                        <span class="chip">EHR Integration</span>
+                        <span class="chip">HIPAA Compliant</span>
+                        <span class="chip">Remote Monitoring</span>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-row glass-card featured-row" data-animate>
+                    <div class="service-index">02</div>
+                    <div class="service-info">
+                        <h3>Technical AI</h3>
+                        <p>Custom machine learning models, intelligent automation pipelines, and AI-powered platforms — all engineered by our MIT-trained team for scale, reliability, and performance. We specialize in taking complex, unstructured problems and turning them into elegant, production-ready systems. From natural language processing and computer vision to recommendation engines and anomaly detection, we build the AI infrastructure that powers your core business. Our engineering philosophy: if it can't run reliably at scale with proper monitoring and graceful failure modes, it's not ready for production.</p>
+                    </div>
+                    <div class="service-tags">
+                        <span class="chip">Custom ML Models</span>
+                        <span class="chip">NLP & LLMs</span>
+                        <span class="chip">Computer Vision</span>
+                        <span class="chip">Intelligent Automation</span>
+                        <span class="chip">AI Platform Development</span>
+                        <span class="chip">Data Infrastructure</span>
+                        <span class="chip">MLOps & Monitoring</span>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-row glass-card" data-animate>
+                    <div class="service-index">03</div>
+                    <div class="service-info">
+                        <h3>Marketing AI</h3>
+                        <p>Your marketing team is sitting on a goldmine of data — but without AI, most of it goes to waste. We build intelligent systems that turn customer behavior, market signals, and campaign data into actionable growth strategies. Our marketing co-founder has led growth at scale, and that experience is baked into every solution: predictive lead scoring that actually predicts, content optimization that moves the needle, and customer segmentation models that uncover segments you didn't know existed. We don't build dashboards — we build growth engines.</p>
+                    </div>
+                    <div class="service-tags">
+                        <span class="chip">Predictive Lead Scoring</span>
+                        <span class="chip">Customer Segmentation</span>
+                        <span class="chip">Content Intelligence</span>
+                        <span class="chip">Conversion Optimization</span>
+                        <span class="chip">Attribution Modeling</span>
+                        <span class="chip">Personalization Engines</span>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Can Build -->
+    <section class="case-studies" id="case-studies">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="tag">Use Cases</span>
+                <h2>What We Can<br><span class="gradient-text">Build For You</span></h2>
+                <p>Here's a look at the types of solutions our cross-disciplinary team is built to deliver.</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card glass-card" data-animate>
+                    <div class="case-category">Medical AI</div>
+                    <h3>Patient Triage & Clinical Decision Support</h3>
+                    <p>AI systems that analyze patient intake data in real time to assist with acuity assessment and clinical prioritization. Designed to integrate directly into existing EHR workflows, built HIPAA-compliant from the ground up, and validated by our physician co-founder against real clinical scenarios.</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="metric-value">EHR</span>
+                            <span class="metric-label">Integration Ready</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-value">HIPAA</span>
+                            <span class="metric-label">Compliant</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-value">MD</span>
+                            <span class="metric-label">Validated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card glass-card" data-animate>
+                    <div class="case-category">Technical AI</div>
+                    <h3>Intelligent Document Processing & NLP Pipelines</h3>
+                    <p>Custom NLP systems that extract, classify, and summarize information from unstructured documents at scale. Built for industries like legal, finance, and healthcare where accuracy and auditability are non-negotiable. Designed to reduce manual review and unlock insights buried in text.</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="metric-value">NLP</span>
+                            <span class="metric-label">Custom Models</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-value">Scale</span>
+                            <span class="metric-label">Production Grade</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-value">MIT</span>
+                            <span class="metric-label">Engineered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card glass-card" data-animate>
+                    <div class="case-category">Marketing AI</div>
+                    <h3>Predictive Lead Scoring & Growth Intelligence</h3>
+                    <p>ML models that score leads based on behavioral signals, firmographic data, and engagement patterns — replacing rules-based systems with models that learn and improve over time. Designed to help sales teams focus on the leads most likely to convert and give marketing teams clarity on what's actually driving pipeline.</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="metric-value">ML</span>
+                            <span class="metric-label">Powered Scoring</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-value">Data</span>
+                            <span class="metric-label">Driven Growth</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="metric-value">ROI</span>
+                            <span class="metric-label">Focused</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="tag">Our Stack</span>
+                <h2>Built on<br><span class="gradient-text">Best-in-Class Tools</span></h2>
+                <p>We use the most powerful and proven tools in the AI ecosystem — no vendor lock-in, no unnecessary complexity.</p>
+            </div>
+            <div class="stack-grid">
+                <div class="stack-group glass-card" data-animate>
+                    <h4>ML & AI Frameworks</h4>
+                    <div class="stack-items">
+                        <span class="stack-item">PyTorch</span>
+                        <span class="stack-item">TensorFlow</span>
+                        <span class="stack-item">Hugging Face</span>
+                        <span class="stack-item">scikit-learn</span>
+                        <span class="stack-item">LangChain</span>
+                        <span class="stack-item">OpenAI API</span>
+                        <span class="stack-item">Anthropic API</span>
+                    </div>
+                </div>
+                <div class="stack-group glass-card" data-animate>
+                    <h4>Data & Infrastructure</h4>
+                    <div class="stack-items">
+                        <span class="stack-item">AWS</span>
+                        <span class="stack-item">GCP</span>
+                        <span class="stack-item">Snowflake</span>
+                        <span class="stack-item">PostgreSQL</span>
+                        <span class="stack-item">Redis</span>
+                        <span class="stack-item">Apache Kafka</span>
+                        <span class="stack-item">Docker</span>
+                    </div>
+                </div>
+                <div class="stack-group glass-card" data-animate>
+                    <h4>MLOps & Monitoring</h4>
+                    <div class="stack-items">
+                        <span class="stack-item">MLflow</span>
+                        <span class="stack-item">Weights & Biases</span>
+                        <span class="stack-item">Kubernetes</span>
+                        <span class="stack-item">Grafana</span>
+                        <span class="stack-item">Airflow</span>
+                        <span class="stack-item">Terraform</span>
+                        <span class="stack-item">GitHub Actions</span>
+                    </div>
+                </div>
+                <div class="stack-group glass-card" data-animate>
+                    <h4>Application Layer</h4>
+                    <div class="stack-items">
+                        <span class="stack-item">Python</span>
+                        <span class="stack-item">TypeScript</span>
+                        <span class="stack-item">React</span>
+                        <span class="stack-item">Next.js</span>
+                        <span class="stack-item">FastAPI</span>
+                        <span class="stack-item">Node.js</span>
+                        <span class="stack-item">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="industries">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="tag">Industries</span>
+                <h2>Who We<br><span class="gradient-text">Work With</span></h2>
+                <p>Our three-pillar expertise gives us a unique edge across a wide range of industries. Here's where we create the most impact.</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card glass-card" data-animate>
+                    <span class="industry-icon">🏥</span>
+                    <h4>Healthcare & Life Sciences</h4>
+                    <p>Hospitals, clinics, healthtech startups, pharmaceutical companies, and clinical research organizations looking to embed AI into patient care, drug discovery, and operational workflows.</p>
+                </div>
+                <div class="industry-card glass-card" data-animate>
+                    <span class="industry-icon">💼</span>
+                    <h4>B2B SaaS & Technology</h4>
+                    <p>Software companies looking to add AI-powered features to their products — from intelligent search and recommendations to automated workflows and predictive analytics inside their platforms.</p>
+                </div>
+                <div class="industry-card glass-card" data-animate>
+                    <span class="industry-icon">🛒</span>
+                    <h4>E-Commerce & Retail</h4>
+                    <p>Brands and retailers using AI for personalized shopping experiences, demand forecasting, dynamic pricing, inventory optimization, and customer lifetime value prediction.</p>
+                </div>
+                <div class="industry-card glass-card" data-animate>
+                    <span class="industry-icon">🏦</span>
+                    <h4>Financial Services</h4>
+                    <p>Fintechs, banks, and insurance companies deploying AI for fraud detection, risk scoring, automated underwriting, regulatory compliance, and customer service automation.</p>
+                </div>
+                <div class="industry-card glass-card" data-animate>
+                    <span class="industry-icon">📡</span>
+                    <h4>Media & Advertising</h4>
+                    <p>Agencies, publishers, and ad-tech platforms using AI for audience targeting, content optimization, programmatic buying, sentiment analysis, and creative performance prediction.</p>
+                </div>
+                <div class="industry-card glass-card" data-animate>
+                    <span class="industry-icon">🏗️</span>
+                    <h4>Real Estate & PropTech</h4>
+                    <p>Property companies and platforms leveraging AI for automated valuations, market trend prediction, lead qualification, smart building analytics, and tenant experience optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise -->
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="tag">Why Syri AI</span>
+                <h2>What Makes Us<br><span class="gradient-text">Different</span></h2>
+                <p>There are plenty of AI companies. Here's why clients choose us — and stay with us.</p>
+            </div>
+            <div class="expertise-bento">
+                <div class="exp-card glass-card exp-wide" data-animate>
+                    <div class="exp-number">01</div>
+                    <h4>Industry-First Approach</h4>
+                    <p>We start with deep domain knowledge, not generic algorithms. Our physician validates every healthcare model against real clinical workflows. Our strategist pressure-tests every marketing model against real campaign data. Every model is trained, validated, and deployed by people who've worked in the industry it serves — not just engineers who read about it.</p>
+                </div>
+                <div class="exp-card glass-card" data-animate>
+                    <div class="exp-number">02</div>
+                    <h4>Production-Ready from Day One</h4>
+                    <p>No demos, no POCs gathering dust. Our MIT-trained engineering team builds for scale, security, and reliability from the first line of code. Every system includes monitoring, alerting, graceful failure modes, and rollback capabilities. We don't ship experiments — we ship products.</p>
+                </div>
+                <div class="exp-card glass-card" data-animate>
+                    <div class="exp-number">03</div>
+                    <h4>Measurable Impact</h4>
+                    <p>Every engagement is tied to clear KPIs agreed upon before we write a single line of code. We measure success by your outcomes — revenue lifted, costs reduced, time saved, accuracy improved — not by how sophisticated our models are. If we can't define the metric, we don't start the project.</p>
+                </div>
+                <div class="exp-card glass-card" data-animate>
+                    <div class="exp-number">04</div>
+                    <h4>Cross-Disciplinary Teams</h4>
+                    <p>Clinicians, engineers, and strategists working together on every project. This isn't a staffing agency model — it's a deeply integrated team where the doctor challenges the engineer's assumptions and the strategist holds both accountable to business results.</p>
+                </div>
+                <div class="exp-card glass-card" data-animate>
+                    <div class="exp-number">05</div>
+                    <h4>Ethical & Responsible AI</h4>
+                    <p>We build AI with transparency, fairness, and accountability baked into every system. That means bias audits, explainability layers, data privacy by design, and clear documentation of model limitations. Our physician co-founder brings a "first, do no harm" mindset to everything we ship.</p>
+                </div>
+                <div class="exp-card glass-card exp-wide" data-animate>
+                    <div class="exp-number">06</div>
+                    <h4>Long-Term Partnership, Not One-Off Projects</h4>
+                    <p>AI isn't a one-and-done deliverable. Models drift, data changes, and business needs evolve. We build relationships, not just systems — providing ongoing optimization, retraining, and strategic guidance to ensure your AI investment compounds over time. Most of our clients have been with us since our earliest days, and that's by design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="tag">How We Work</span>
+                <h2>From Idea to<br><span class="gradient-text">Production</span></h2>
+                <p>Our battle-tested process ensures every project moves from concept to deployed solution with speed, clarity, and zero surprises.</p>
+            </div>
+            <div class="process-track">
+                <div class="process-line"></div>
+                <div class="process-cards">
+                    <div class="proc-card glass-card" data-animate>
+                        <div class="proc-marker"><span>01</span></div>
+                        <h4>Discovery</h4>
+                        <p>We spend 1-2 weeks diving deep into your business, workflows, data landscape, and strategic goals. We interview stakeholders, audit existing data, and identify the highest-impact AI opportunities. You'll walk away with a clear roadmap — even if you decide not to work with us.</p>
+                    </div>
+                    <div class="proc-card glass-card" data-animate>
+                        <div class="proc-marker"><span>02</span></div>
+                        <h4>Design</h4>
+                        <p>Our cross-functional team architects a solution tailored to your domain, data, and success metrics. We define the model architecture, data pipeline, integration points, and deployment strategy. You'll see wireframes, system diagrams, and a detailed project plan before we write any code.</p>
+                    </div>
+                    <div class="proc-card glass-card" data-animate>
+                        <div class="proc-marker"><span>03</span></div>
+                        <h4>Develop</h4>
+                        <p>Iterative builds in 2-week sprints with continuous validation from domain experts. You'll see working demos every two weeks, with full transparency into model performance, edge cases, and remaining risks. No black boxes, no surprises — just steady, measurable progress.</p>
+                    </div>
+                    <div class="proc-card glass-card" data-animate>
+                        <div class="proc-marker"><span>04</span></div>
+                        <h4>Deploy & Scale</h4>
+                        <p>Production deployment with comprehensive monitoring, automated alerting, performance dashboards, and ongoing optimization. We don't hand off and disappear. We provide ongoing support, model retraining, and strategic guidance to ensure your system gets better over time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Principles -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="tag">Our Principles</span>
+                <h2>What We<br><span class="gradient-text">Stand For</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card" data-animate>
+                    <div class="testimonial-quote">"First, do no harm." Our physician co-founder brings this mindset to every project — not just healthcare. We believe AI should augment human judgment, not replace it. Every system we build includes explainability, bias checks, and clear documentation of limitations.</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">01</div>
+                        <div class="author-info">
+                            <span class="author-name">Responsible AI</span>
+                            <span class="author-role">Transparency, fairness, and accountability in every system</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card" data-animate>
+                    <div class="testimonial-quote">We don't ship experiments. Our MIT-trained engineering team builds for production from day one — with proper monitoring, alerting, failure modes, and rollback capabilities. If it can't run reliably at scale, it's not ready to deploy.</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">02</div>
+                        <div class="author-info">
+                            <span class="author-name">Engineering Rigor</span>
+                            <span class="author-role">Production-grade systems, not impressive demos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card" data-animate>
+                    <div class="testimonial-quote">Every project starts with a measurable goal and ends with a measurable result. We don't build AI for the sake of AI — we build it to move specific business metrics. If we can't define what success looks like upfront, we don't start the project.</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">03</div>
+                        <div class="author-info">
+                            <span class="author-name">Outcomes Over Outputs</span>
+                            <span class="author-role">Results you can measure, not just models you can admire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq-layout">
+                <div class="faq-left" data-animate>
+                    <span class="tag">FAQ</span>
+                    <h2>Questions?<br><span class="gradient-text">We've Got Answers.</span></h2>
+                    <p>Everything you need to know about working with Syri AI. Don't see your question? Reach out — we're always happy to chat.</p>
+                </div>
+                <div class="faq-right">
+                    <div class="faq-item glass-card" data-animate>
+                        <button class="faq-toggle">
+                            <span>How long does a typical project take?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It depends on complexity. Discovery takes 1-2 weeks. A focused MVP can be built and deployed in 6-10 weeks. More complex enterprise solutions typically run 3-6 months from kickoff to production. We'll give you a detailed timeline during the Design phase — and we stick to it.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card" data-animate>
+                        <button class="faq-toggle">
+                            <span>What does it cost to work with Syri AI?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer project-based pricing and retainer models depending on scope. A typical engagement starts at $25K for a focused AI solution and scales from there. We'll scope your project during Discovery and provide a detailed, transparent quote — no hidden fees, no surprise invoices.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card" data-animate>
+                        <button class="faq-toggle">
+                            <span>Do I need to have my data ready before we start?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Not at all. Most clients come to us with messy, fragmented, or incomplete data — and that's fine. Our Discovery phase includes a comprehensive data audit where we assess what you have, what you need, and how to bridge the gap. We can also help you build the data infrastructure and collection pipelines needed to power your AI solution.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card" data-animate>
+                        <button class="faq-toggle">
+                            <span>What industries do you specialize in?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our core verticals are healthcare, technology, and marketing — driven by the deep expertise of our three co-founders. But the AI solutions we build serve clients across financial services, e-commerce, real estate, legal tech, media, and more. If your problem involves data and decisions, we can likely help.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card" data-animate>
+                        <button class="faq-toggle">
+                            <span>How is Syri AI different from hiring an in-house team?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Hiring a full AI team (ML engineers, data engineers, domain experts, MLOps) takes 6-12 months and costs $800K-$1.5M+ per year. We give you access to a cross-disciplinary team with deep domain expertise from day one, at a fraction of the cost. And because we've built dozens of production AI systems, we move faster and avoid the common pitfalls that slow down new teams.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card" data-animate>
+                        <button class="faq-toggle">
+                            <span>Do you offer ongoing support after deployment?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. AI systems need ongoing care — models drift, data changes, and business needs evolve. We offer retainer-based support packages that include model monitoring, periodic retraining, performance optimization, and strategic consultation. Most of our clients transition to a support retainer after initial deployment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card glass-card" data-animate>
+                <div class="cta-orb"></div>
+                <span class="tag">Ready?</span>
+                <h2>Let's Build Something<br><span class="gradient-text">Intelligent.</span></h2>
+                <p>Whether you're exploring AI for the first time or scaling an existing initiative — we'd love to hear your challenge. Book a free Discovery call and we'll map out exactly how AI can impact your business.</p>
+                <a href="#contact" class="btn btn-glow btn-lg">Start a Conversation <span class="btn-arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-left" data-animate>
+                    <span class="tag">Get in Touch</span>
+                    <h2>Let's Talk.</h2>
+                    <p>Have a project in mind? Want to explore what AI can do for your business? Or just want to say hi? Drop us a message and our team will respond within 24 hours. No sales pitch — just a real conversation about your goals.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="detail-label">Headquarters</span>
+                            <span class="detail-value">Miami, Florida</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value">hello@syriai.com</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">Response Time</span>
+                            <span class="detail-value">Within 24 hours</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link glass-card" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link glass-card" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link glass-card" aria-label="GitHub">gh</a>
+                    </div>
+                </div>
+                <div class="contact-right" data-animate>
+                    <form class="contact-form glass-card" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Your company">
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">Focus Area</label>
+                                <select id="interest" name="interest" required>
+                                    <option value="" disabled selected>Select a focus area</option>
+                                    <option value="medical">Medical AI</option>
+                                    <option value="technical">Technical AI</option>
+                                    <option value="marketing">Marketing AI</option>
+                                    <option value="consulting">AI Strategy Consulting</option>
+                                    <option value="other">Other / Unsure</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="" disabled selected>Select a range</option>
+                                <option value="25-50k">$25K - $50K</option>
+                                <option value="50-100k">$50K - $100K</option>
+                                <option value="100-250k">$100K - $250K</option>
+                                <option value="250k+">$250K+</option>
+                                <option value="unsure">Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Project</label>
+                            <textarea id="message" name="message" rows="5" placeholder="What challenge are you trying to solve? What does success look like? Any relevant context about your data, timeline, or constraints..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-glow btn-full">Send Message <span class="btn-arrow">→</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-mark">
+                            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                                <rect x="2" y="2" width="24" height="24" rx="6" stroke="url(#logoGrad2)" stroke-width="2"/>
+                                <circle cx="10" cy="14" r="3" fill="url(#logoGrad2)"/>
+                                <circle cx="18" cy="10" r="2" fill="url(#logoGrad2)" opacity="0.6"/>
+                                <circle cx="18" cy="18" r="2" fill="url(#logoGrad2)" opacity="0.6"/>
+                                <line x1="12.5" y1="13" x2="16.5" y2="10.5" stroke="url(#logoGrad2)" stroke-width="1.2"/>
+                                <line x1="12.5" y1="15" x2="16.5" y2="17.5" stroke="url(#logoGrad2)" stroke-width="1.2"/>
+                                <defs>
+                                    <linearGradient id="logoGrad2" x1="0" y1="0" x2="28" y2="28">
+                                        <stop stop-color="#7c3aed"/>
+                                        <stop offset="1" stop-color="#e879f9"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span>Syri AI</span>
+                    </a>
+                    <p>AI solutions built by a physician, an MIT engineer, and a marketing strategist — for real-world impact across medicine, technology, and growth.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h5>Company</h5>
+                        <a href="#about">About</a>
+                        <a href="#services">Solutions</a>
+                        <a href="#case-studies">Use Cases</a>
+                        <a href="#expertise">Why Us</a>
+                        <a href="#process">Process</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Solutions</h5>
+                        <a href="#services">Medical AI</a>
+                        <a href="#services">Technical AI</a>
+                        <a href="#services">Marketing AI</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Industries</h5>
+                        <a href="#">Healthcare</a>
+                        <a href="#">SaaS & Tech</a>
+                        <a href="#">E-Commerce</a>
+                        <a href="#">Financial Services</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Connect</h5>
+                        <a href="#contact">Contact</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Syri AI. All rights reserved. Built in Miami with ♥ and intelligence.</span>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
